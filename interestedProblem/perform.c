@@ -53,15 +53,20 @@ int
 mindays (int n)
 {
 	int onePerform=0,sevenPerform=0,fifteenPerform=0,days15=0,mindays=0;
+
 	if(n>=50 && n<=200){
+		
 		fifteenPerform=n/15;
+	
 		if((n-fifteenPerform*15)>=7){
+		
 			sevenPerform=(n-fifteenPerform*15)/7;
 		}
-	days15=fifteenPerform+sevenPerform+(n-fifteenPerform*15-sevenPerform*7);
 	}
-	else
-		return 0;
+	
+	days15=fifteenPerform+sevenPerform+(n-fifteenPerform*15-sevenPerform*7);
+	
 	mindays=days15;
+	
 	return mindays;	
 }	
