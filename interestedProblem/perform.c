@@ -57,10 +57,8 @@ mindays (int n)
 		fifteenPerform=n/15;
 		if((n-fifteenPerform*15)>=7){
 			sevenPerform=(n-fifteenPerform*15)/7;
-			days15=fifteenPerform+sevenPerform+(n-fifteenPerform*15-sevenPerform*7);
-		}else{
-			days15=fifteenPerform+(n-fifteenPerform*15);
 		}
+	days15=fifteenPerform+sevenPerform+(n-fifteenPerform*15-sevenPerform*7);
 	}
 	else
 		return 0;
