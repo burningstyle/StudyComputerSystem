@@ -5,7 +5,7 @@
  *
  *    Description:  
  *
- *        Version:  1.0
+ *        Version:  1.1
  *        Created:  2012年08月06日 23时00分26秒
  *       Revision:  none
  *       Compiler:  gcc
@@ -58,9 +58,9 @@ mindays (int n)
 {
 	int onePerform=0,sevenPerform=0,fifteenPerform=0,days15=0,mindays=0;
 
-    if(n>=50 && n<=200){
+	if(n>=50 && n<=200){
 		
-        fifteenPerform=n/15;
+		fifteenPerform=n/15;
 
         if((n-fifteenPerform*15)>=7){
 	
