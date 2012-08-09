@@ -67,7 +67,7 @@ mindays (int n)
 			sevenPerform=(n-fifteenPerform*15)/7;
 		}
 	}
-    onePerform=n-fifteenPerform*15-sevenPerform*7;
+    	onePerform=n-fifteenPerform*15-sevenPerform*7;
  
 	days15=fifteenPerform+sevenPerform+onePerform;
     
