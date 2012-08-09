@@ -35,15 +35,15 @@ int mindays(int n);
 int
 main ( int argc, char *argv[] )
 {	
-		int n=0;
-
-		printf ( "Please input the num of people:" );
-		
-        scanf("%d",&n);	
-		
-        printf ("%d people perform need at least %d days\n",n,mindays(n));
-		
-        return 0;
+	int n=0;
+	
+	printf ( "Please input the num of people:" );
+    
+	scanf("%d",&n);
+	
+	printf ("%d people perform need at least %d days\n",n,mindays(n));
+    
+	return 0;
 }
 
 
@@ -57,22 +57,21 @@ int
 mindays (int n)
 {
 	int onePerform=0,sevenPerform=0,fifteenPerform=0,days15=0,mindays=0;
-
-	if(n>=50 && n<=200){
-		
-		fifteenPerform=n/15;
-
-        if((n-fifteenPerform*15)>=7){
 	
-            sevenPerform=(n-fifteenPerform*15)/7;
+	if(n>=50 && n<=200){
+	
+		fifteenPerform=n/15;
+        
+		if((n-fifteenPerform*15)>=7){
+        
+			sevenPerform=(n-fifteenPerform*15)/7;
 		}
 	}
-    
     onePerform=n-fifteenPerform*15-sevenPerform*7;
-	
-    days15=fifteenPerform+sevenPerform+onePerform;
-	
-    mindays=days15;
-	
-    return mindays;	
+ 
+	days15=fifteenPerform+sevenPerform+onePerform;
+    
+	mindays=days15;
+    
+	return mindays;	
 }	
