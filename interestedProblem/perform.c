@@ -64,7 +64,7 @@ mindays (int n)
 		fifteenPerform=n/15;
 		       
 		if((n-fifteenPerform*15)>=7){
-        //如果分配完15人表演的天数后，剩余的人超过7人，则将7人表演的天数算出
+		//如果分配完15人表演的天数后，剩余的人超过7人，则将7人表演的天数算出
 			sevenPerform=(n-fifteenPerform*15)/7;
 		}
 	}
