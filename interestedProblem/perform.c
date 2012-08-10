@@ -50,20 +50,21 @@ main ( int argc, char *argv[] )
 /* 
  * ===  FUNCTION  ======================================================================
  *         Name:  mindays
- *  Description:  
+ *  Description:  先算15人的天数，再将余下的人算7人表演的天数，最后减去15人表演和7人表演
+ *	的总天数，其余的都是每天的独唱。
  * =====================================================================================
  */
 int
 mindays (int n)
 {
 	int onePerform=0,sevenPerform=0,fifteenPerform=0,days15=0,mindays=0;
-	
+	//days15表示先从15人的表演开始算起的所花的总时间（因为题目要求人数在50—200人之间，所以可以直接除以15）
 	if(n>=50 && n<=200){
 	
 		fifteenPerform=n/15;
-        
+		       
 		if((n-fifteenPerform*15)>=7){
-        
+        //如果分配完15人表演的天数后，剩余的人超过7人，则将7人表演的天数算出
 			sevenPerform=(n-fifteenPerform*15)/7;
 		}
 	}
